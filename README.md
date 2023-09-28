@@ -4,6 +4,7 @@ Bem-vindo ao projeto Movies Simbiox! Este projeto foi criado como parte de um te
 
 ## Como Iniciar o Projeto
 
+
 Para iniciar o projeto, siga os passos abaixo:
 
 1. Clone este repositório em seu ambiente local:
