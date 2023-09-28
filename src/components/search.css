@@ -1,0 +1,117 @@
+/* Search.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
+
+.title {
+    color: black;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 2rem 0 1rem;
+}
+
+.query-text {
+    color: black;
+}
+
+.movies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.movie-container {
+    position: relative;
+    width: 15%;
+    color: black;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: none;
+    padding: 1rem;
+    border-radius: 5px;
+    -webkit-box-shadow: -6px 5px 23px 3px rgba(0, 0, 0, 0.54);
+    -moz-box-shadow: -6px 5px 23px 3px rgba(0, 0, 0, 0.54);
+    box-shadow: -6px 5px 23px 3px rgba(0, 0, 0, 0.54);
+}
+
+.movie-image {
+    width: 100%;
+    max-height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.movie-image img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.movie-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 1;
+    pointer-events: none;
+    font-size: 0.8rem;
+    color: white;
+    overflow: auto;
+}
+
+.movie-image:hover .movie-details:hover {
+    opacity: 1;
+    pointer-events: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 80%;
+    background-color: white;
+} 
+
+.movie-info {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Adicionado para alinhar informações e botão verticalmente */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px; /* Espaçamento entre informações e botão */
+}
+
+.saiba-mais-button {
+    margin-top: 10px; /* Espaçamento entre botão e conteúdo abaixo */
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.saiba-mais-button:hover {
+    background-color: #101011;
+    -webkit-box-shadow: 1px 8px 38px 4px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 8px 38px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 8px 38px 4px rgba(0, 0, 0, 0.5);
+}

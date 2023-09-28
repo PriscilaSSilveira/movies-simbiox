@@ -1,0 +1,80 @@
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #6f727583;
+    color: black;
+    -webkit-box-shadow: -6px 5px 23px 3px rgba(0, 0, 0, 0.54);
+    -moz-box-shadow: -6px 5px 23px 3px rgba(0, 0, 0, 0.54);
+    box-shadow: -6px 5px 23px 3px rgba(0, 0, 0, 0.54);
+}
+
+#navbar a {
+    text-decoration: none;
+    color: black;
+    transition: transform 0.2s;
+}
+
+#navbar a:hover {
+    transform: scale(1.1);
+}
+
+#navbar form {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#navbar form input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    -webkit-box-shadow: -6px 5px 23px 3px rgba(0, 0, 0, 0.54);
+    -moz-box-shadow: -6px 5px 23px 3px rgba(0, 0, 0, 0.54);
+    box-shadow: -6px 5px 23px 3px rgba(0, 0, 0, 0.54);
+}
+
+#navbar form input:focus {
+    border: 1px solid black;
+}
+
+#navbar form button {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+#navbar h2 a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+@media (max-width: 768px) {
+    #navbar {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    #navbar h2 {
+        margin-bottom: 20px;
+    }
+
+    #navbar form {
+        margin-top: 20px;
+    }
+
+    #navbar form input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
